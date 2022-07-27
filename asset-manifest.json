@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/caro/static/css/main.8fb81816.css",
+    "main.js": "/caro/static/js/main.6e85778b.js",
+    "static/js/787.35cea4b2.chunk.js": "/caro/static/js/787.35cea4b2.chunk.js",
+    "static/media/lose.png": "/caro/static/media/lose.fed134ab38f4be712c40.png",
+    "static/media/win.png": "/caro/static/media/win.eee2d3ddca744230b7b8.png",
+    "static/media/logo.png": "/caro/static/media/logo.f271bfbaa46e3a29a539.png",
+    "index.html": "/caro/index.html",
+    "main.8fb81816.css.map": "/caro/static/css/main.8fb81816.css.map",
+    "main.6e85778b.js.map": "/caro/static/js/main.6e85778b.js.map",
+    "787.35cea4b2.chunk.js.map": "/caro/static/js/787.35cea4b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fb81816.css",
+    "static/js/main.6e85778b.js"
+  ]
+}
