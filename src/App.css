@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+.broad {
+    width: 500px;
+    padding: 1%;
+    background-color: #F0B060;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game {
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info__user {
+    width: 400px;
+    background-color: pink;
+    display: flex;
+    font-size: small;
+    justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user_timer {
+    text-align: center;
+    color: red;
+    background-color: #F0B060;
 }
 
-.App-link {
-  color: #61dafb;
+.user {
+    border: 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.broad__loading {}
+
+.item {
+    /* background-color: pink; */
+    width: 34px;
+    height: 34px;
+    border: 0.2px solid #876445;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__active {
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px 1px #503F2A;
+    width: 70%;
+    height: 70%;
+}
+
+.item__active--white {
+    background-color: #F3F3F3;
+}
+
+.item__active--black {
+    background-color: #282828;
+}
+
+.broad__active .item__active--none {
+    width: 70%;
+    height: 70%;
+    transition: all 0.5s;
+}
+
+.broad__active .item__active--none:hover {
+    box-shadow: none;
+    background-color: #F5F0BB;
+}
+
+.intro {
+    margin: auto;
+    width: 300px;
+}
+
+.intro__logo {
+    width: 200px;
+    margin: auto;
+}
+
+.intro__logo img {
+    width: 100%;
+}
+
+.intro__option {
+    width: 200px;
+    margin: auto;
+}
+
+.intro__button {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 20px;
+    border: none;
+    background-color: #0175FF;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.alert {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert__blur {
+    width: 100vw;
+    height: 100vh;
+    background-color: #503F2A;
+    opacity: .5;
+    position: absolute;
+}
+
+.alert__content {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.user__chess {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 1px 1px #503F2A;
+}
+
+.user__chess--white {
+    background-color: #F3F3F3;
+}
+
+.user__chess--black {
+    background-color: #282828;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 5px 20px;
+}
+
+.user div {
+    padding: 5px;
+}
+
+.user__timer {
+    color: red;
+    font-size: large;
+    border: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.alert__button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0175FF;
+    color: aliceblue;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.alert__icon {
+    width: 100px;
+    height: 100px;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #0175FF;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.broad__load {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
